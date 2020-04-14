@@ -6,11 +6,13 @@ import { HttpClient } from '@angular/common/http'
   providedIn: 'root'
 })
 export class RequestService {
-  apikey=environment.apikey;
+  apikey = environment.apikey;
     username:string;
   private repo:string;
 
-  constructor(private http:HttpClient) { }
+  constructor(private http:HttpClient) {
+
+   }
 
   reposLink(reposearch){
 
