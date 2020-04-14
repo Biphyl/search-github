@@ -1,6 +1,5 @@
 import { Component, OnInit } from '@angular/core'; 
 import { RequestService } from '../user-request/request.service';
-import { resolve } from 'dns';
 
 @Component({
   selector: 'app-search-bar',
@@ -19,7 +18,7 @@ export class SearchBarComponent implements OnInit {
 
   constructor(private requestservice:RequestService) { }
 
-    seaech(inputsearch:string){
+    search(inputsearch:string){
       let promise= new Promise((resolve,reject)=> {
       this.requestservice.userInfo(this.inputsearch)
       .toPromise().then((data=>{
