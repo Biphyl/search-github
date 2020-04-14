@@ -6,10 +6,10 @@ export class User {
   repos=[];
 
   constructor(private onject:JSON){
-    this.name=Object['name'];
-    this.avatar=Object['avatar_url'];
-    this.followers=Object['followers_url'];
-    this.following=Object['following_url'];
+    this.name=object['name'];
+    this.avatar=object['avatar_url'];
+    this.followers=object['followers_url'];
+    this.following=object['following_url'];
 
   }
 
