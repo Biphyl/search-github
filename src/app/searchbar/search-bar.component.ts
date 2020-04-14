@@ -32,7 +32,7 @@ export class SearchBarComponent implements OnInit {
 
     searchRepo(reposearch:string){
       let promise= new Promise((resolve,reject)=>{
-      this.requestservice.repoLink(this.reposearch)
+      this.requestservice.reposLink(this.reposearch)
       .toPromise().then((data)=>{
         this.outputRepoSearch=data['items'];
         this.repos=data;
